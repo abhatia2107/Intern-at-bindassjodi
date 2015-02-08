@@ -1,0 +1,8 @@
+http://askubuntu.com/questions/155310/why-do-i-get-a-blue-screen-after-interrupting-upgrade-to-12-04-with-a-power-off
+
+http://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa
+
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get autoclean
+sudo apt-get update
+

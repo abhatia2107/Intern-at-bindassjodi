@@ -1,0 +1,14 @@
+https://mailinabox.email/guide.html#setup
+
+To edit the nameserver of a domain name,
+1st edit hostnames
+ns1.box your mail server ip
+ns2.box your mail server ip
+
+then edit your nameserver 
+ns1.box.hobbyix.com
+ns2.box.hobbyix.com
+
+When we've mail in a box setup.
+Open box.hobbyix.com/admin for admin panel
+Here go to custom and edit ip of your site.

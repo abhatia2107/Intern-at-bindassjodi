@@ -1,0 +1,21 @@
+To get link of page opened.
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+To get size of array
+count($array);
+sizeof($array);
+//sizeof() is an alias for count(), they work the same
+
+
+To check if an object is empty
+
+$arr=$obj->toarray();
+if(empty($arr))
+{
+	//Do your action.
+} 
+
+If there is a constructor in a class as well as parent class, it needs to call parent class's constructor separately in PHP.
+Using
+	parent::__construct();
+See BatchesController for example.

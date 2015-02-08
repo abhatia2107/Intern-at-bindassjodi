@@ -1,0 +1,36 @@
+Install the latest version of Vagrant
+	sudo dpkg -i virtualbox-4.3_4.3.12-93733~Ubuntu~precise_amd64.deb 
+
+Install the latest version of Vagrant
+	sudo dpkg -i vagrant_1.6.3_x86_64.deb
+
+Install the latest version of ChefDK
+Details at https://www.chef.io/chef/
+	sudo dpkg -i chefdk_0.3.6-1_amd64.deb
+
+Make sure Ruby has secure source for it:-
+//- to remove insecure connection
+	sudo gem sources -r http://rubygems.org/ 
+//- add secure connection
+	sudo gem sources -a https://rubygems.org/ 
+
+Install the ruby-dev
+	sudo apt-get install ruby-dev
+
+Update gem
+	sudo gem update
+
+Install Celluloid
+	sudo gem install celluloid -v '0.16.0'
+
+Install Nokogiri
+	sudo gem install nokogiri -v '1.6.5'
+
+Install the Vagrant Berkshelf plugin:
+	vagrant plugin install vagrant-berkshelf
+
+Install the Vagrant Omnibus plugin:
+	vagrant plugin install vagrant-omnibus
+	
+Install the Vagrant Hostmanager plugin:
+	vagrant plugin install vagrant-hostmanager

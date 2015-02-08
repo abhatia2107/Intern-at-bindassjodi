@@ -1,0 +1,5 @@
+To bring cursor in 1st line
+gg
+
+To delete all lines in vim
+dG

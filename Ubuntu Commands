@@ -1,0 +1,21 @@
+To kill some user's ssh session 
+kill its ssh session. Check them by
+
+	ps aux | egrep "sshd: [a-zA-Z]+@"
+Second column gives you the PID. Then,
+
+	sudo kill -9 [PID]
+
+	sudo ufw allow 80/tcp
+	sudo ufw show added
+	sudo ufw enable
+
+Mounting a partition as read only in ubuntu
+	udisksctl mount --block-device /dev/sda3 --options ro
+
+Mounting external hard disk if faced an error MTFMirr doesnot match
+
+	sudo ntfsfix /dev/sdb1
+
+To show files sorted by modifying time
+ls -t

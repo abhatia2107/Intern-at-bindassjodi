@@ -1,0 +1,12 @@
+Follow this:-
+http://maxoffsky.com/code-blog/integrating-facebook-login-into-laravel-application/
+
+You can encounter problem in adding localhost to app domain
+
+My solution:
+
+	Leave App Domains empty
+	App > Settings > Advanced
+	Add http://localhost:8000/ to Valid OAuth redirect URIs box
+	Save Changes
+

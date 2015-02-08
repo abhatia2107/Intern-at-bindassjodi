@@ -1,0 +1,5 @@
+To import a sql file in database
+mysql -u root -p hobby < myfile.sql
+
+error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)'
+sudo service mysql restart

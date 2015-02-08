@@ -1,0 +1,40 @@
+To change port on which it open:
+php artisan serve --port=8080
+To serve it to local server through wireless.
+php artisan serve --host 0.0.0.0
+
+For grouping filters, as or:-
+function csrfFilter()
+{
+    if (Session::token() != Input::get('_token'))
+    {
+        throw new Illuminate\Session\TokenMismatchException;
+    }
+}
+function authFilter()
+{
+    if (Auth::guest()) return Redirect::guest('login');
+}
+
+Route::filter('csrf-or-auth', function () 
+{
+    $value = call_user_func('csrfFilter');
+    if ($value) return $value;
+    else return call_user_func('authFilter');
+});
+In routes.php
+
+Route::group(array('before' => 'csrf-or-auth', function()
+{
+     //
+}));
+
+
+http://www.quora.com/Is-Laravel-the-best-PHP-framework-in-2014-Why
+
+http://code.tutsplus.com/tutorials/25-laravel-tips-and-tricks--pre-92818
+
+http://culttt.com/2013/09/16/use-laravel-4-filters/
+
+
+

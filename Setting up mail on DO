@@ -1,0 +1,17 @@
+https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassasin
+
+#Change custom domain records to set your domain's IPv4 address to your server address
+Leave subdomain empty and add www once.
+
+#run this to resolve ssh errors. 
+	ssh-keygen -A
+	service ssh restart
+
+#Edit /etc/hosts.allow file to allow your domain. Put this lines
+	ALL: .hobbyix.com: 
+
+Edit /etc/postfix/main.cf to include your domain name.
+	mydestination=localhost, hobbyix.com, hobbyix.in
+	postfix reload
+
+

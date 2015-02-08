@@ -1,0 +1,48 @@
+https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server
+
+https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-14-04
+
+ssh key is stored at default location
+	/home/abhishek/.ssh
+
+ssh-copy-id username@remote_host
+
+Updating /etc/ssh/sshd_config on server to allow only ssh key login.
+
+	# Authentication:
+	LoginGraceTime 120
+	PermitRootLogin yes
+	StrictModes yes
+
+		TO
+	# Authentication:
+	LoginGraceTime 120
+	PermitRootLogin without-password
+	StrictModes yes
+
+ssh root@104.236.85.67
+
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
+
+https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers
+
+ssh -p 2020 root@104.236.85.67
+ssh -p 2020 abhishek@104.236.85.67
+
+For file transfer through SFTP
+
+sftp -P 2020 root@104.236.85.67
+sftp -P 2020 abhishek@104.236.85.67
+
+https://www.digitalocean.com/community/tutorials/how-to-install-laravel-with-an-nginx-web-server-on-ubuntu-14-04
+
+https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server
+
+$ ssh-keygen -A
+$ service ssh restart
